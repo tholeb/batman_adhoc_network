@@ -1,0 +1,9 @@
+---
+skip_list:
+  - package-latest
+  - meta-no-info
+  - ignore-errors
+
+exclude_paths:
+  - "roles/**/files/**"
+  - ".github/**"

@@ -1,0 +1,602 @@
+2024-02-09 15:22:24,902 p=3661 u=tholeb n=ansiblelint | Linter finished without analyzing any file, check configuration and arguments given.
+2024-02-09 15:22:26,330 p=3708 u=tholeb n=ansiblelint | Linter finished without analyzing any file, check configuration and arguments given.
+2024-02-09 15:22:45,358 p=3892 u=tholeb n=ansible | ERROR! the role 'base' was not found in /home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.cache/ansible-compat/c8b430/roles:/home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/tholeb/Polytech/batman_adhoc_network
+
+The error appears to be in '/home/tholeb/Polytech/batman_adhoc_network/batman.yml': line 23, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+      - role: base
+        ^ here
+
+2024-02-09 15:22:49,394 p=4004 u=tholeb n=ansible | ERROR! the role 'base' was not found in /home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.cache/ansible-compat/c8b430/roles:/home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/tholeb/Polytech/batman_adhoc_network
+
+The error appears to be in '/home/tholeb/Polytech/batman_adhoc_network/batman.yml': line 23, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+      - role: base
+        ^ here
+
+2024-02-09 15:22:52,350 p=4055 u=tholeb n=ansible | ERROR! the role 'base' was not found in /home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.cache/ansible-compat/c8b430/roles:/home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/tholeb/Polytech/batman_adhoc_network
+
+The error appears to be in '/home/tholeb/Polytech/batman_adhoc_network/batman.yml': line 23, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+      - role: base
+        ^ here
+
+2024-02-09 15:24:03,872 p=4220 u=tholeb n=ansible | ERROR! the role 'base' was not found in /home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.cache/ansible-compat/c8b430/roles:/home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/tholeb/Polytech/batman_adhoc_network
+
+The error appears to be in '/home/tholeb/Polytech/batman_adhoc_network/batman.yml': line 9, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+      - role: base
+        ^ here
+
+2024-02-09 15:24:26,538 p=4292 u=tholeb n=ansible | ERROR! the role 'setup' was not found in /home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.cache/ansible-compat/c8b430/roles:/home/tholeb/Polytech/batman_adhoc_network/roles:/home/tholeb/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/tholeb/Polytech/batman_adhoc_network
+
+The error appears to be in '/home/tholeb/Polytech/batman_adhoc_network/batman.yml': line 9, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+      - role: setup
+        ^ here
+
+2024-02-09 15:24:55,113 p=4450 u=tholeb n=ansible | [WARNING]: While constructing a mapping from <unicode string>, line 15, column
+3, found a duplicate dict key (command). Using last defined value only.
+
+2024-02-09 15:24:55,140 p=4450 u=tholeb n=ansible | [WARNING]: While constructing a mapping from
+/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/main.yml, line 15,
+column 3, found a duplicate dict key (command). Using last defined value only.
+
+2024-02-09 15:25:02,093 p=4499 u=tholeb n=ansible | [WARNING]: While constructing a mapping from <unicode string>, line 16, column
+3, found a duplicate dict key (command). Using last defined value only.
+
+2024-02-09 15:25:02,120 p=4499 u=tholeb n=ansible | [WARNING]: While constructing a mapping from
+/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/main.yml, line 16,
+column 3, found a duplicate dict key (command). Using last defined value only.
+
+2024-02-09 15:25:20,475 p=4564 u=tholeb n=ansible | [WARNING]: While constructing a mapping from <unicode string>, line 16, column
+3, found a duplicate dict key (command). Using last defined value only.
+
+2024-02-09 15:25:20,512 p=4564 u=tholeb n=ansible | [WARNING]: While constructing a mapping from
+/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/main.yml, line 16,
+column 3, found a duplicate dict key (command). Using last defined value only.
+
+2024-02-09 15:38:58,836 p=8889 u=tholeb n=ansible | PLAY [Deploy the Raspberry Pi 4 🍓] ************************************************************************************************************************************
+2024-02-09 15:38:58,901 p=8889 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:38:58,903 p=8889 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined"}
+2024-02-09 15:38:58,904 p=8889 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined"}
+2024-02-09 15:38:58,913 p=8889 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined"}
+2024-02-09 15:38:58,915 p=8889 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:38:58,916 p=8889 u=tholeb n=ansible | 169.254.210.241            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:38:58,916 p=8889 u=tholeb n=ansible | 169.254.45.230             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:38:58,917 p=8889 u=tholeb n=ansible | 169.254.96.228             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:11,654 p=9081 u=tholeb n=ansible | PLAY [Deploy the Raspberry Pi 4 🍓] ************************************************************************************************************************************
+2024-02-09 15:39:11,732 p=9081 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:39:11,735 p=9081 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'remote_user' is undefined. 'remote_user' is undefined. 'remote_user' is undefined. 'remote_user' is undefined"}
+2024-02-09 15:39:11,736 p=9081 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'remote_user' is undefined. 'remote_user' is undefined. 'remote_user' is undefined. 'remote_user' is undefined"}
+2024-02-09 15:39:11,750 p=9081 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'remote_user' is undefined. 'remote_user' is undefined. 'remote_user' is undefined. 'remote_user' is undefined"}
+2024-02-09 15:39:11,752 p=9081 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:39:11,752 p=9081 u=tholeb n=ansible | 169.254.210.241            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:11,753 p=9081 u=tholeb n=ansible | 169.254.45.230             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:11,753 p=9081 u=tholeb n=ansible | 169.254.96.228             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:13,457 p=9137 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 15:39:21,464 p=9189 u=tholeb n=ansible | PLAY [Deploy the Raspberry Pi 4 🍓] ************************************************************************************************************************************
+2024-02-09 15:39:21,524 p=9189 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:39:21,526 p=9189 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined"}
+2024-02-09 15:39:21,527 p=9189 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined"}
+2024-02-09 15:39:21,538 p=9189 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"msg": "The field 'remote_user' has an invalid value, which includes an undefined variable. The error was: 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined. 'ansible_user' is undefined"}
+2024-02-09 15:39:21,540 p=9189 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:39:21,541 p=9189 u=tholeb n=ansible | 169.254.210.241            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:21,541 p=9189 u=tholeb n=ansible | 169.254.45.230             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:21,541 p=9189 u=tholeb n=ansible | 169.254.96.228             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:42,620 p=9351 u=tholeb n=ansible | PLAY [Deploy the Raspberry Pi 4 🍓] ************************************************************************************************************************************
+2024-02-09 15:39:42,865 p=9351 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:39:42,867 p=9351 u=tholeb n=ansible | fatal: [169.254.45.230]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '169.254.45.230' (ED25519) to the list of known hosts.\r\npi@169.254.45.230: Permission denied (publickey,password).", "unreachable": true}
+2024-02-09 15:39:42,868 p=9351 u=tholeb n=ansible | fatal: [169.254.210.241]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '169.254.210.241' (ED25519) to the list of known hosts.\r\npi@169.254.210.241: Permission denied (publickey,password).", "unreachable": true}
+2024-02-09 15:39:42,902 p=9351 u=tholeb n=ansible | fatal: [169.254.96.228]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '169.254.96.228' (ED25519) to the list of known hosts.\r\npi@169.254.96.228: Permission denied (publickey,password).", "unreachable": true}
+2024-02-09 15:39:42,904 p=9351 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:39:42,905 p=9351 u=tholeb n=ansible | 169.254.210.241            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:42,905 p=9351 u=tholeb n=ansible | 169.254.45.230             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:42,906 p=9351 u=tholeb n=ansible | 169.254.96.228             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:57,891 p=9443 u=tholeb n=ansible | PLAY [Deploy the Raspberry Pi 4 🍓] ************************************************************************************************************************************
+2024-02-09 15:39:58,015 p=9443 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:39:58,017 p=9443 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
+2024-02-09 15:39:58,018 p=9443 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
+2024-02-09 15:39:58,063 p=9443 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
+2024-02-09 15:39:58,065 p=9443 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:39:58,065 p=9443 u=tholeb n=ansible | 169.254.210.241            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:58,065 p=9443 u=tholeb n=ansible | 169.254.45.230             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:39:58,066 p=9443 u=tholeb n=ansible | 169.254.96.228             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:40:50,738 p=9680 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 15:41:54,590 p=9992 u=tholeb n=ansible | PLAY [Deploy the Raspberry Pi 4 🍓] ************************************************************************************************************************************
+2024-02-09 15:41:56,465 p=9992 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 15:42:16,503 p=10238 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:42:19,370 p=10238 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:42:19,371 p=10238 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:42:19,452 p=10238 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:42:21,787 p=10238 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:42:24,264 p=10238 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 15:42:24,265 p=10238 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "No package matching 'linux-image-extra-rpi' is available"}
+2024-02-09 15:42:28,713 p=10238 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "No package matching 'linux-image-extra-rpi' is available"}
+2024-02-09 15:42:44,029 p=10238 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "No package matching 'linux-image-extra-rpi' is available"}
+2024-02-09 15:42:44,031 p=10238 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:42:44,031 p=10238 u=tholeb n=ansible | 169.254.210.241            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:42:44,031 p=10238 u=tholeb n=ansible | 169.254.45.230             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:42:44,032 p=10238 u=tholeb n=ansible | 169.254.96.228             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:43:12,088 p=10582 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:43:15,217 p=10582 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:43:15,219 p=10582 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:43:15,229 p=10582 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:43:17,276 p=10582 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:43:32,479 p=10582 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 15:43:32,480 p=10582 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"cache_update_time": 1700032368, "cache_updated": false, "changed": false, "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"       install 'batctl=2020.4-2'' failed: E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "rc": 100, "stderr": "E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "stderr_lines": ["E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »", "E: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?"], "stdout": "Lecture des listes de paquets…\nConstruction de l'arbre des dépendances…\nLecture des informations d'état…\nLe paquet suivant a été installé automatiquement et n'est plus nécessaire :\n  libfuse2\nVeuillez utiliser « sudo apt autoremove » pour le supprimer.\nLes NOUVEAUX paquets suivants seront installés :\n  batctl\n0 mis à jour, 1 nouvellement installés, 0 à enlever et 0 non mis à jour.\nIl est nécessaire de prendre 80.1 ko dans les archives.\nAprès cette opération, 198 ko d'espace disque supplémentaires seront utilisés.\nErr :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2\n  Erreur temporaire de résolution de « deb.debian.org »\n", "stdout_lines": ["Lecture des listes de paquets…", "Construction de l'arbre des dépendances…", "Lecture des informations d'état…", "Le paquet suivant a été installé automatiquement et n'est plus nécessaire :", "  libfuse2", "Veuillez utiliser « sudo apt autoremove » pour le supprimer.", "Les NOUVEAUX paquets suivants seront installés :", "  batctl", "0 mis à jour, 1 nouvellement installés, 0 à enlever et 0 non mis à jour.", "Il est nécessaire de prendre 80.1 ko dans les archives.", "Après cette opération, 198 ko d'espace disque supplémentaires seront utilisés.", "Err :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2", "  Erreur temporaire de résolution de « deb.debian.org »"]}
+2024-02-09 15:43:32,553 p=10582 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"cache_update_time": 1700034373, "cache_updated": false, "changed": false, "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"       install 'batctl=2020.4-2'' failed: E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "rc": 100, "stderr": "E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "stderr_lines": ["E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »", "E: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?"], "stdout": "Lecture des listes de paquets…\nConstruction de l'arbre des dépendances…\nLecture des informations d'état…\nLes NOUVEAUX paquets suivants seront installés :\n  batctl\n0 mis à jour, 1 nouvellement installés, 0 à enlever et 16 non mis à jour.\nIl est nécessaire de prendre 80.1 ko dans les archives.\nAprès cette opération, 198 ko d'espace disque supplémentaires seront utilisés.\nErr :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2\n  Erreur temporaire de résolution de « deb.debian.org »\n", "stdout_lines": ["Lecture des listes de paquets…", "Construction de l'arbre des dépendances…", "Lecture des informations d'état…", "Les NOUVEAUX paquets suivants seront installés :", "  batctl", "0 mis à jour, 1 nouvellement installés, 0 à enlever et 16 non mis à jour.", "Il est nécessaire de prendre 80.1 ko dans les archives.", "Après cette opération, 198 ko d'espace disque supplémentaires seront utilisés.", "Err :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2", "  Erreur temporaire de résolution de « deb.debian.org »"]}
+2024-02-09 15:43:34,736 p=10582 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 15:44:07,701 p=10926 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:44:10,459 p=10926 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:44:10,461 p=10926 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:44:10,495 p=10926 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:44:12,562 p=10926 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:44:27,775 p=10926 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 15:44:27,777 p=10926 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"cache_update_time": 1700032368, "cache_updated": false, "changed": false, "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"       install 'batctl=2020.4-2'' failed: E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "rc": 100, "stderr": "E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "stderr_lines": ["E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »", "E: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?"], "stdout": "Lecture des listes de paquets…\nConstruction de l'arbre des dépendances…\nLecture des informations d'état…\nLe paquet suivant a été installé automatiquement et n'est plus nécessaire :\n  libfuse2\nVeuillez utiliser « sudo apt autoremove » pour le supprimer.\nLes NOUVEAUX paquets suivants seront installés :\n  batctl\n0 mis à jour, 1 nouvellement installés, 0 à enlever et 0 non mis à jour.\nIl est nécessaire de prendre 80.1 ko dans les archives.\nAprès cette opération, 198 ko d'espace disque supplémentaires seront utilisés.\nErr :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2\n  Erreur temporaire de résolution de « deb.debian.org »\n", "stdout_lines": ["Lecture des listes de paquets…", "Construction de l'arbre des dépendances…", "Lecture des informations d'état…", "Le paquet suivant a été installé automatiquement et n'est plus nécessaire :", "  libfuse2", "Veuillez utiliser « sudo apt autoremove » pour le supprimer.", "Les NOUVEAUX paquets suivants seront installés :", "  batctl", "0 mis à jour, 1 nouvellement installés, 0 à enlever et 0 non mis à jour.", "Il est nécessaire de prendre 80.1 ko dans les archives.", "Après cette opération, 198 ko d'espace disque supplémentaires seront utilisés.", "Err :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2", "  Erreur temporaire de résolution de « deb.debian.org »"]}
+2024-02-09 15:44:27,815 p=10926 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"cache_update_time": 1700034373, "cache_updated": false, "changed": false, "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"       install 'batctl=2020.4-2'' failed: E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "rc": 100, "stderr": "E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "stderr_lines": ["E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »", "E: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?"], "stdout": "Lecture des listes de paquets…\nConstruction de l'arbre des dépendances…\nLecture des informations d'état…\nLes NOUVEAUX paquets suivants seront installés :\n  batctl\n0 mis à jour, 1 nouvellement installés, 0 à enlever et 16 non mis à jour.\nIl est nécessaire de prendre 80.1 ko dans les archives.\nAprès cette opération, 198 ko d'espace disque supplémentaires seront utilisés.\nErr :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2\n  Erreur temporaire de résolution de « deb.debian.org »\n", "stdout_lines": ["Lecture des listes de paquets…", "Construction de l'arbre des dépendances…", "Lecture des informations d'état…", "Les NOUVEAUX paquets suivants seront installés :", "  batctl", "0 mis à jour, 1 nouvellement installés, 0 à enlever et 16 non mis à jour.", "Il est nécessaire de prendre 80.1 ko dans les archives.", "Après cette opération, 198 ko d'espace disque supplémentaires seront utilisés.", "Err :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2", "  Erreur temporaire de résolution de « deb.debian.org »"]}
+2024-02-09 15:44:34,528 p=10926 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"cache_update_time": 1699431492, "cache_updated": false, "changed": false, "msg": "'/usr/bin/apt-get -y -o \"Dpkg::Options::=--force-confdef\" -o \"Dpkg::Options::=--force-confold\"       install 'batctl=2020.4-2'' failed: E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "rc": 100, "stderr": "E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »\nE: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?\n", "stderr_lines": ["E: Impossible de récupérer http://deb.debian.org/debian/pool/main/b/batctl/batctl_2020.4-2_arm64.deb  Erreur temporaire de résolution de « deb.debian.org »", "E: Impossible de récupérer certaines archives, peut-être devrez-vous lancer apt-get update ou essayer avec --fix-missing ?"], "stdout": "Lecture des listes de paquets…\nConstruction de l'arbre des dépendances…\nLecture des informations d'état…\nLes NOUVEAUX paquets suivants seront installés :\n  batctl\n0 mis à jour, 1 nouvellement installés, 0 à enlever et 108 non mis à jour.\nIl est nécessaire de prendre 80.1 ko dans les archives.\nAprès cette opération, 198 ko d'espace disque supplémentaires seront utilisés.\nErr :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2\n  Erreur temporaire de résolution de « deb.debian.org »\n", "stdout_lines": ["Lecture des listes de paquets…", "Construction de l'arbre des dépendances…", "Lecture des informations d'état…", "Les NOUVEAUX paquets suivants seront installés :", "  batctl", "0 mis à jour, 1 nouvellement installés, 0 à enlever et 108 non mis à jour.", "Il est nécessaire de prendre 80.1 ko dans les archives.", "Après cette opération, 198 ko d'espace disque supplémentaires seront utilisés.", "Err :1 http://deb.debian.org/debian bullseye/main arm64 batctl arm64 2020.4-2", "  Erreur temporaire de résolution de « deb.debian.org »"]}
+2024-02-09 15:44:34,530 p=10926 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:44:34,531 p=10926 u=tholeb n=ansible | 169.254.210.241            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:44:34,531 p=10926 u=tholeb n=ansible | 169.254.45.230             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:44:34,531 p=10926 u=tholeb n=ansible | 169.254.96.228             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:45:00,394 p=11285 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:45:03,192 p=11285 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:45:03,193 p=11285 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:45:03,223 p=11285 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:45:05,269 p=11285 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:47:31,108 p=11285 u=tholeb n=ansible | TASK [setup : Mise à jour du système] **********************************************************************************************************************************
+2024-02-09 15:47:31,109 p=11285 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: unknown reason"}
+2024-02-09 15:47:31,490 p=11285 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Failed to update apt cache: unknown reason"}
+2024-02-09 15:48:20,070 p=11285 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 15:48:24,230 p=11939 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:48:26,999 p=11939 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:48:27,000 p=11939 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:48:27,003 p=11939 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:48:29,061 p=11939 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:48:29,266 p=11939 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 15:48:29,267 p=11939 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:48:29,267 p=11939 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/ansible/batctl_2020.4-2_amd64.deb' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:48:29,287 p=11939 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:48:29,287 p=11939 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/ansible/batctl_2020.4-2_amd64.deb' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:48:29,288 p=11939 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:48:29,288 p=11939 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/ansible/batctl_2020.4-2_amd64.deb' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:48:29,292 p=11939 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:48:29,292 p=11939 u=tholeb n=ansible | 169.254.210.241            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:48:29,293 p=11939 u=tholeb n=ansible | 169.254.45.230             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:48:29,293 p=11939 u=tholeb n=ansible | 169.254.96.228             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:48:37,501 p=12116 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:48:40,279 p=12116 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:48:40,281 p=12116 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:48:40,318 p=12116 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:48:42,335 p=12116 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:48:44,138 p=12116 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 15:48:44,138 p=12116 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 15:48:44,216 p=12116 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 15:48:45,176 p=12116 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 15:48:49,375 p=12116 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 15:48:49,376 p=12116 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Wrong architecture 'amd64' -- Run dpkg --add-architecture to add it and update afterwards"}
+2024-02-09 15:48:49,389 p=12116 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Wrong architecture 'amd64' -- Run dpkg --add-architecture to add it and update afterwards"}
+2024-02-09 15:48:53,850 p=12116 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Wrong architecture 'amd64' -- Run dpkg --add-architecture to add it and update afterwards"}
+2024-02-09 15:48:53,852 p=12116 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:48:53,852 p=12116 u=tholeb n=ansible | 169.254.210.241            : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:48:53,853 p=12116 u=tholeb n=ansible | 169.254.45.230             : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:48:53,853 p=12116 u=tholeb n=ansible | 169.254.96.228             : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:49:25,088 p=12556 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:49:27,860 p=12556 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:49:27,862 p=12556 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:49:27,887 p=12556 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:49:29,950 p=12556 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:49:30,150 p=12556 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 15:49:30,151 p=12556 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:49:30,152 p=12556 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Could not find or access 'batctl_2020.4-2_amd64.deb'\nSearched in:\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/batctl_2020.4-2_amd64.deb on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:49:30,172 p=12556 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:49:30,173 p=12556 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Could not find or access 'batctl_2020.4-2_amd64.deb'\nSearched in:\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/batctl_2020.4-2_amd64.deb on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:49:30,174 p=12556 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:49:30,174 p=12556 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Could not find or access 'batctl_2020.4-2_amd64.deb'\nSearched in:\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/files/batctl_2020.4-2_amd64.deb\n\t/home/tholeb/Polytech/batman_adhoc_network/batctl_2020.4-2_amd64.deb on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:49:30,177 p=12556 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:49:30,178 p=12556 u=tholeb n=ansible | 169.254.210.241            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:49:30,178 p=12556 u=tholeb n=ansible | 169.254.45.230             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:49:30,179 p=12556 u=tholeb n=ansible | 169.254.96.228             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:49:45,415 p=12809 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:49:48,206 p=12809 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:49:48,208 p=12809 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:49:48,289 p=12809 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:49:50,259 p=12809 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:49:50,444 p=12809 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 15:49:50,445 p=12809 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:49:50,446 p=12809 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Could not find or access 'batctl_2020.4-2_arm64'\nSearched in:\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/batctl_2020.4-2_arm64 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:49:50,458 p=12809 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:49:50,459 p=12809 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Could not find or access 'batctl_2020.4-2_arm64'\nSearched in:\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/batctl_2020.4-2_arm64 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:49:50,471 p=12809 u=tholeb n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2024-02-09 15:49:50,472 p=12809 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Could not find or access 'batctl_2020.4-2_arm64'\nSearched in:\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/files/batctl_2020.4-2_arm64\n\t/home/tholeb/Polytech/batman_adhoc_network/batctl_2020.4-2_arm64 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2024-02-09 15:49:50,475 p=12809 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:49:50,475 p=12809 u=tholeb n=ansible | 169.254.210.241            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:49:50,476 p=12809 u=tholeb n=ansible | 169.254.45.230             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:49:50,476 p=12809 u=tholeb n=ansible | 169.254.96.228             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:50:13,681 p=12997 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 15:50:16,468 p=12997 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 15:50:16,469 p=12997 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 15:50:16,517 p=12997 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 15:50:18,580 p=12997 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 15:50:20,400 p=12997 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 15:50:20,401 p=12997 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 15:50:20,402 p=12997 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 15:50:21,458 p=12997 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 15:50:28,915 p=12997 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 15:50:28,916 p=12997 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 15:50:28,916 p=12997 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 15:50:38,006 p=12997 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 15:50:39,063 p=12997 u=tholeb n=ansible | TASK [setup : Charge le module batman-adv] *****************************************************************************************************************************
+2024-02-09 15:50:39,063 p=12997 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 15:50:39,083 p=12997 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 15:50:39,729 p=12997 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 15:50:40,702 p=12997 u=tholeb n=ansible | TASK [setup : Désactive l'interface wlan0] *****************************************************************************************************************************
+2024-02-09 15:50:40,704 p=12997 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Error: NetworkManager is not running.\n", "name": "wlan0"}
+2024-02-09 15:50:40,760 p=12997 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Error: NetworkManager is not running.\n", "name": "wlan0"}
+2024-02-09 15:50:41,455 p=12997 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Error: NetworkManager is not running.\n", "name": "wlan0"}
+2024-02-09 15:50:41,456 p=12997 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 15:50:41,457 p=12997 u=tholeb n=ansible | 169.254.210.241            : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:50:41,457 p=12997 u=tholeb n=ansible | 169.254.45.230             : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 15:50:41,457 p=12997 u=tholeb n=ansible | 169.254.96.228             : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:13:13,911 p=14242 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:13:17,248 p=14242 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:13:17,251 p=14242 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:13:17,287 p=14242 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:13:19,314 p=14242 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:13:21,291 p=14242 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 16:13:21,291 p=14242 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:13:21,299 p=14242 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:13:22,286 p=14242 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:13:29,060 p=14242 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 16:13:29,061 p=14242 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:13:30,543 p=14242 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:13:37,947 p=14242 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:13:38,860 p=14242 u=tholeb n=ansible | TASK [setup : Charge le module batman-adv] *****************************************************************************************************************************
+2024-02-09 16:13:38,860 p=14242 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:13:38,889 p=14242 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:13:39,414 p=14242 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:13:40,357 p=14242 u=tholeb n=ansible | TASK [setup : Désactive l'interface wlan0] *****************************************************************************************************************************
+2024-02-09 16:13:40,358 p=14242 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Error: NetworkManager is not running.\n", "name": "wlan0"}
+2024-02-09 16:13:40,368 p=14242 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Error: NetworkManager is not running.\n", "name": "wlan0"}
+2024-02-09 16:13:41,041 p=14242 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Error: NetworkManager is not running.\n", "name": "wlan0"}
+2024-02-09 16:13:41,042 p=14242 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:13:41,042 p=14242 u=tholeb n=ansible | 169.254.210.241            : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:13:41,043 p=14242 u=tholeb n=ansible | 169.254.45.230             : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:13:41,043 p=14242 u=tholeb n=ansible | 169.254.96.228             : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:15:24,459 p=15065 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:15:27,604 p=15065 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:15:27,605 p=15065 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:15:27,668 p=15065 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:15:27,898 p=15065 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 16:15:44,626 p=15263 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:15:47,379 p=15263 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:15:47,380 p=15263 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:15:47,400 p=15263 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:15:49,399 p=15263 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:15:51,083 p=15263 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 16:15:51,083 p=15263 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:15:51,132 p=15263 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:15:52,176 p=15263 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:15:56,377 p=15263 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 16:15:56,377 p=15263 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:15:56,388 p=15263 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:00,736 p=15263 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:01,657 p=15263 u=tholeb n=ansible | TASK [setup : Charge le module batman-adv] *****************************************************************************************************************************
+2024-02-09 16:16:01,657 p=15263 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:01,682 p=15263 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:16:02,203 p=15263 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:03,032 p=15263 u=tholeb n=ansible | TASK [setup : NetworkManager gère ifupdown] ****************************************************************************************************************************
+2024-02-09 16:16:03,033 p=15263 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:16:03,047 p=15263 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:16:03,626 p=15263 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:16:06,442 p=15263 u=tholeb n=ansible | TASK [setup : Active NetworkManager] ***********************************************************************************************************************************
+2024-02-09 16:16:06,442 p=15263 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:16:06,470 p=15263 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:16:08,828 p=15263 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:16:09,796 p=15263 u=tholeb n=ansible | TASK [setup : Désactive l'interface wlan0] *****************************************************************************************************************************
+2024-02-09 16:16:09,796 p=15263 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:09,807 p=15263 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:16:10,766 p=15263 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:10,832 p=15263 u=tholeb n=ansible | TASK [setup : Configurer l'interface wlan0 en mode ad-hoc] *************************************************************************************************************
+2024-02-09 16:16:10,833 p=15263 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'number' is undefined. 'number' is undefined\n\nThe error appears to be in '/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/main.yml': line 34, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Configurer l'interface wlan0 en mode ad-hoc\n  ^ here\n"}
+2024-02-09 16:16:10,841 p=15263 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'number' is undefined. 'number' is undefined\n\nThe error appears to be in '/home/tholeb/Polytech/batman_adhoc_network/roles/setup/tasks/main.yml': line 34, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Configurer l'interface wlan0 en mode ad-hoc\n  ^ here\n"}
+2024-02-09 16:16:12,658 p=15263 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Error: Failed to add 'wlan0' connection: 802-11-wireless.band: ? channel ? requiert de param?trer la propri?t? ??band??\n", "name": "wlan0", "rc": 4}
+2024-02-09 16:16:12,659 p=15263 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:16:12,660 p=15263 u=tholeb n=ansible | 169.254.210.241            : ok=7    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:16:12,660 p=15263 u=tholeb n=ansible | 169.254.45.230             : ok=7    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:16:12,660 p=15263 u=tholeb n=ansible | 169.254.96.228             : ok=7    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:16:27,360 p=15778 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:16:30,031 p=15778 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:16:30,032 p=15778 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:30,095 p=15778 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:16:32,157 p=15778 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:33,848 p=15778 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 16:16:33,849 p=15778 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:33,850 p=15778 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:16:34,990 p=15778 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:39,238 p=15778 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 16:16:39,239 p=15778 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:39,239 p=15778 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:16:43,684 p=15778 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:44,534 p=15778 u=tholeb n=ansible | TASK [setup : Charge le module batman-adv] *****************************************************************************************************************************
+2024-02-09 16:16:44,535 p=15778 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:44,540 p=15778 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:16:45,161 p=15778 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:45,999 p=15778 u=tholeb n=ansible | TASK [setup : NetworkManager gère ifupdown] ****************************************************************************************************************************
+2024-02-09 16:16:45,999 p=15778 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:46,000 p=15778 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:16:46,597 p=15778 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:48,841 p=15778 u=tholeb n=ansible | TASK [setup : Active NetworkManager] ***********************************************************************************************************************************
+2024-02-09 16:16:48,842 p=15778 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:16:48,843 p=15778 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:16:50,182 p=15778 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:16:51,224 p=15778 u=tholeb n=ansible | TASK [setup : Désactive l'interface wlan0] *****************************************************************************************************************************
+2024-02-09 16:16:51,224 p=15778 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:16:51,232 p=15778 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:16:52,407 p=15778 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:16:53,386 p=15778 u=tholeb n=ansible | TASK [setup : Configurer l'interface wlan0 en mode ad-hoc] *************************************************************************************************************
+2024-02-09 16:16:53,387 p=15778 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Error: Failed to add 'wlan0' connection: 802-11-wireless.band: ? channel ? requiert de param?trer la propri?t? ??band??\n", "name": "wlan0", "rc": 4}
+2024-02-09 16:16:53,421 p=15778 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Error: Failed to add 'wlan0' connection: 802-11-wireless.band: ? channel ? requiert de param?trer la propri?t? ??band??\n", "name": "wlan0", "rc": 4}
+2024-02-09 16:16:54,283 p=15778 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Error: Failed to add 'wlan0' connection: 802-11-wireless.band: ? channel ? requiert de param?trer la propri?t? ??band??\n", "name": "wlan0", "rc": 4}
+2024-02-09 16:16:54,285 p=15778 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:16:54,285 p=15778 u=tholeb n=ansible | 169.254.210.241            : ok=7    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:16:54,285 p=15778 u=tholeb n=ansible | 169.254.45.230             : ok=7    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:16:54,286 p=15778 u=tholeb n=ansible | 169.254.96.228             : ok=7    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:17:50,750 p=16444 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:17:53,406 p=16444 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:17:53,407 p=16444 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:17:53,460 p=16444 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:17:55,422 p=16444 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 16:18:00,360 p=16586 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:18:03,092 p=16586 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:18:03,093 p=16586 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:18:03,147 p=16586 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:18:05,207 p=16586 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:18:06,870 p=16586 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 16:18:06,871 p=16586 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:18:06,877 p=16586 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:18:07,971 p=16586 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:18:12,122 p=16586 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 16:18:12,123 p=16586 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:18:12,142 p=16586 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:18:16,553 p=16586 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:18:17,409 p=16586 u=tholeb n=ansible | TASK [setup : Charge le module batman-adv] *****************************************************************************************************************************
+2024-02-09 16:18:17,412 p=16586 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:18:17,412 p=16586 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:18:18,032 p=16586 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:18:18,834 p=16586 u=tholeb n=ansible | TASK [setup : NetworkManager gère ifupdown] ****************************************************************************************************************************
+2024-02-09 16:18:18,835 p=16586 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:18:18,842 p=16586 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:18:19,439 p=16586 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:18:21,623 p=16586 u=tholeb n=ansible | TASK [setup : Active NetworkManager] ***********************************************************************************************************************************
+2024-02-09 16:18:21,624 p=16586 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:18:21,686 p=16586 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:18:22,972 p=16586 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:18:23,933 p=16586 u=tholeb n=ansible | TASK [setup : Désactive l'interface wlan0] *****************************************************************************************************************************
+2024-02-09 16:18:23,933 p=16586 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:18:23,949 p=16586 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:18:25,212 p=16586 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:18:26,763 p=16586 u=tholeb n=ansible | TASK [setup : Configurer l'interface wlan0 en mode ad-hoc] *************************************************************************************************************
+2024-02-09 16:18:26,764 p=16586 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:18:26,792 p=16586 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:18:27,134 p=16586 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:18:28,067 p=16586 u=tholeb n=ansible | TASK [setup : Ajoute l'interface wlan0 à batman-adv] *******************************************************************************************************************
+2024-02-09 16:18:28,068 p=16586 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:18:28,068 p=16586 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:18:29,258 p=16586 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:18:30,172 p=16586 u=tholeb n=ansible | TASK [setup : Active l'interface bat0] *********************************************************************************************************************************
+2024-02-09 16:18:30,173 p=16586 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Error: bad connection type: 'None' not among [6lowpan, 802-11-olpc-mesh (olpc-mesh), 802-11-wireless (wifi), 802-3-ethernet (ethernet), adsl, bluetooth, bond, bridge, cdma, dummy, generic, gsm, infiniband, ip-tunnel, macsec, macvlan, ovs-bridge, ovs-dpdk, ovs-interface, ovs-patch, ovs-port, pppoe, team, tun, veth, vlan, vpn, vrf, vxlan, wifi-p2p, wimax, wireguard, wpan, bond-slave, bridge-slave, team-slave]\n", "name": "bat0", "rc": 2}
+2024-02-09 16:18:30,213 p=16586 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Error: bad connection type: 'None' not among [6lowpan, 802-11-olpc-mesh (olpc-mesh), 802-11-wireless (wifi), 802-3-ethernet (ethernet), adsl, bluetooth, bond, bridge, cdma, dummy, generic, gsm, infiniband, ip-tunnel, macsec, macvlan, ovs-bridge, ovs-dpdk, ovs-interface, ovs-patch, ovs-port, pppoe, team, tun, veth, vlan, vpn, vrf, vxlan, wifi-p2p, wimax, wireguard, wpan, bond-slave, bridge-slave, team-slave]\n", "name": "bat0", "rc": 2}
+2024-02-09 16:18:31,290 p=16586 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Error: bad connection type: 'None' not among [6lowpan, 802-11-olpc-mesh (olpc-mesh), 802-11-wireless (wifi), 802-3-ethernet (ethernet), adsl, bluetooth, bond, bridge, cdma, dummy, generic, gsm, infiniband, ip-tunnel, macsec, macvlan, ovs-bridge, ovs-dpdk, ovs-interface, ovs-patch, ovs-port, pppoe, team, tun, veth, vlan, vpn, vrf, vxlan, wifi-p2p, wimax, wireguard, wpan, bond-slave, bridge-slave, team-slave]\n", "name": "bat0", "rc": 2}
+2024-02-09 16:18:31,291 p=16586 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:18:31,292 p=16586 u=tholeb n=ansible | 169.254.210.241            : ok=9    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:18:31,292 p=16586 u=tholeb n=ansible | 169.254.45.230             : ok=9    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:18:31,292 p=16586 u=tholeb n=ansible | 169.254.96.228             : ok=9    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:18:57,432 p=17219 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:18:59,856 p=17219 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 16:19:10,665 p=17395 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:19:12,561 p=17395 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 16:19:28,817 p=17549 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:19:31,825 p=17549 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:19:31,826 p=17549 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:19:31,867 p=17549 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:19:34,003 p=17549 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:19:35,790 p=17549 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 16:19:35,791 p=17549 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:19:35,801 p=17549 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:19:36,820 p=17549 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:19:41,057 p=17549 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 16:19:41,058 p=17549 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:19:41,058 p=17549 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:19:45,453 p=17549 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:19:46,300 p=17549 u=tholeb n=ansible | TASK [setup : Charge le module batman-adv] *****************************************************************************************************************************
+2024-02-09 16:19:46,301 p=17549 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:19:46,313 p=17549 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:19:46,902 p=17549 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:19:47,713 p=17549 u=tholeb n=ansible | TASK [setup : NetworkManager gère ifupdown] ****************************************************************************************************************************
+2024-02-09 16:19:47,714 p=17549 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:19:47,731 p=17549 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:19:48,597 p=17549 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:19:50,821 p=17549 u=tholeb n=ansible | TASK [setup : Active NetworkManager] ***********************************************************************************************************************************
+2024-02-09 16:19:50,822 p=17549 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:19:50,921 p=17549 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:19:52,510 p=17549 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:19:53,564 p=17549 u=tholeb n=ansible | TASK [setup : Désactive l'interface wlan0] *****************************************************************************************************************************
+2024-02-09 16:19:53,564 p=17549 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:19:53,577 p=17549 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:19:57,291 p=17549 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:19:58,851 p=17549 u=tholeb n=ansible | TASK [setup : Configurer l'interface wlan0 en mode ad-hoc] *************************************************************************************************************
+2024-02-09 16:19:58,852 p=17549 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:19:58,892 p=17549 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:19:59,792 p=17549 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:20:01,024 p=17549 u=tholeb n=ansible | TASK [setup : Ajoute l'interface wlan0 à batman-adv] *******************************************************************************************************************
+2024-02-09 16:20:01,025 p=17549 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:20:01,062 p=17549 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:20:01,325 p=17549 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:20:02,277 p=17549 u=tholeb n=ansible | TASK [setup : Active l'interface bat0] *********************************************************************************************************************************
+2024-02-09 16:20:02,278 p=17549 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:20:02,305 p=17549 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:20:03,131 p=17549 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:20:03,300 p=17549 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:20:03,301 p=17549 u=tholeb n=ansible | 169.254.210.241            : ok=10   changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:20:03,301 p=17549 u=tholeb n=ansible | 169.254.45.230             : ok=10   changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:20:03,301 p=17549 u=tholeb n=ansible | 169.254.96.228             : ok=10   changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:33:19,129 p=20275 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:33:20,798 p=20296 u=tholeb n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/tholeb/Polytech/batman_adhoc_network/batman.yml': line 12, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        become: true
+post_tasks:
+^ here
+
+2024-02-09 16:33:24,529 p=20373 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:33:24,854 p=20387 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:33:26,411 p=20406 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:33:29,326 p=20446 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:35:48,280 p=20688 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:35:51,856 p=20726 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:35:54,108 p=20764 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:35:59,904 p=20793 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:36:00,086 p=20805 u=tholeb n=ansible | playbook: batman.yml
+2024-02-09 16:36:03,042 p=20793 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:36:03,044 p=20793 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:36:03,105 p=20793 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:36:05,204 p=20793 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:36:06,843 p=20793 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 16:36:06,843 p=20793 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:36:06,844 p=20793 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:36:07,977 p=20793 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:36:12,139 p=20793 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 16:36:12,139 p=20793 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:36:12,148 p=20793 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:36:16,572 p=20793 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:36:17,414 p=20793 u=tholeb n=ansible | TASK [setup : Charge le module batman-adv] *****************************************************************************************************************************
+2024-02-09 16:36:17,414 p=20793 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:36:17,426 p=20793 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:36:18,047 p=20793 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:36:18,911 p=20793 u=tholeb n=ansible | TASK [setup : Empeche le DHCP de gérer l'interface wlan0] **************************************************************************************************************
+2024-02-09 16:36:18,912 p=20793 u=tholeb n=ansible | fatal: [169.254.210.241]: FAILED! => {"changed": false, "msg": "Destination /etc/dhcpd.conf does not exist !", "rc": 257}
+2024-02-09 16:36:18,913 p=20793 u=tholeb n=ansible | fatal: [169.254.45.230]: FAILED! => {"changed": false, "msg": "Destination /etc/dhcpd.conf does not exist !", "rc": 257}
+2024-02-09 16:36:19,537 p=20793 u=tholeb n=ansible | fatal: [169.254.96.228]: FAILED! => {"changed": false, "msg": "Destination /etc/dhcpd.conf does not exist !", "rc": 257}
+2024-02-09 16:36:19,539 p=20793 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:36:19,539 p=20793 u=tholeb n=ansible | 169.254.210.241            : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:36:19,539 p=20793 u=tholeb n=ansible | 169.254.45.230             : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:36:19,540 p=20793 u=tholeb n=ansible | 169.254.96.228             : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:37:37,212 p=21444 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:37:40,280 p=21444 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:37:40,280 p=21444 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:37:41,304 p=21444 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:37:42,430 p=21444 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:37:44,110 p=21444 u=tholeb n=ansible | TASK [setup : Upload le .deb de batctl] ********************************************************************************************************************************
+2024-02-09 16:37:44,110 p=21444 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:37:44,111 p=21444 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:37:45,222 p=21444 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:37:49,400 p=21444 u=tholeb n=ansible | TASK [setup : Installer batctl et modules nécessaires] *****************************************************************************************************************
+2024-02-09 16:37:49,401 p=21444 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:37:49,415 p=21444 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:37:53,877 p=21444 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:37:54,732 p=21444 u=tholeb n=ansible | TASK [setup : Charge le module batman-adv] *****************************************************************************************************************************
+2024-02-09 16:37:54,733 p=21444 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:37:54,733 p=21444 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:37:55,373 p=21444 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:37:56,236 p=21444 u=tholeb n=ansible | TASK [setup : Empeche le DHCP de gérer l'interface wlan0] **************************************************************************************************************
+2024-02-09 16:37:56,237 p=21444 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:37:56,238 p=21444 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:37:56,883 p=21444 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:37:58,362 p=21444 u=tholeb n=ansible | TASK [setup : Upload les fichiers de configuration de batman] **********************************************************************************************************
+2024-02-09 16:37:58,363 p=21444 u=tholeb n=ansible | changed: [169.254.45.230] => (item=bat0)
+2024-02-09 16:37:58,367 p=21444 u=tholeb n=ansible | changed: [169.254.210.241] => (item=bat0)
+2024-02-09 16:37:59,637 p=21444 u=tholeb n=ansible | changed: [169.254.96.228] => (item=bat0)
+2024-02-09 16:37:59,664 p=21444 u=tholeb n=ansible | changed: [169.254.45.230] => (item=wlan0)
+2024-02-09 16:37:59,674 p=21444 u=tholeb n=ansible | changed: [169.254.210.241] => (item=wlan0)
+2024-02-09 16:38:02,338 p=21444 u=tholeb n=ansible | changed: [169.254.96.228] => (item=wlan0)
+2024-02-09 16:38:03,186 p=21444 u=tholeb n=ansible | TASK [setup : NetworkManager gère ifupdown] ****************************************************************************************************************************
+2024-02-09 16:38:03,187 p=21444 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:38:03,187 p=21444 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:38:03,863 p=21444 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:38:06,132 p=21444 u=tholeb n=ansible | TASK [setup : Active NetworkManager] ***********************************************************************************************************************************
+2024-02-09 16:38:06,133 p=21444 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:38:06,134 p=21444 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:38:07,572 p=21444 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:38:08,640 p=21444 u=tholeb n=ansible | TASK [setup : Désactive l'interface wlan0] *****************************************************************************************************************************
+2024-02-09 16:38:08,641 p=21444 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:38:08,664 p=21444 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:38:12,476 p=21444 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:38:13,490 p=21444 u=tholeb n=ansible | TASK [setup : Configurer l'interface wlan0 en mode ad-hoc] *************************************************************************************************************
+2024-02-09 16:38:13,490 p=21444 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:38:13,525 p=21444 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:38:14,575 p=21444 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:38:15,423 p=21444 u=tholeb n=ansible | TASK [setup : Ajoute l'interface wlan0 à batman-adv] *******************************************************************************************************************
+2024-02-09 16:38:15,424 p=21444 u=tholeb n=ansible | changed: [169.254.210.241]
+2024-02-09 16:38:15,425 p=21444 u=tholeb n=ansible | changed: [169.254.45.230]
+2024-02-09 16:38:16,648 p=21444 u=tholeb n=ansible | changed: [169.254.96.228]
+2024-02-09 16:38:17,606 p=21444 u=tholeb n=ansible | TASK [setup : Active l'interface bat0] *********************************************************************************************************************************
+2024-02-09 16:38:17,607 p=21444 u=tholeb n=ansible | ok: [169.254.45.230]
+2024-02-09 16:38:17,634 p=21444 u=tholeb n=ansible | ok: [169.254.210.241]
+2024-02-09 16:38:18,573 p=21444 u=tholeb n=ansible | ok: [169.254.96.228]
+2024-02-09 16:47:38,927 p=21444 u=tholeb n=ansible |  [ERROR]: User interrupted execution
+
+2024-02-09 16:47:41,282 p=24104 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:47:41,639 p=24104 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:47:41,641 p=24104 u=tholeb n=ansible | fatal: [169.254.96.228]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.96.228 port 22: No route to host", "unreachable": true}
+2024-02-09 16:47:44,157 p=24104 u=tholeb n=ansible | fatal: [169.254.210.241]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.210.241 port 22: No route to host", "unreachable": true}
+2024-02-09 16:47:44,158 p=24104 u=tholeb n=ansible | fatal: [169.254.45.230]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.45.230 port 22: No route to host", "unreachable": true}
+2024-02-09 16:47:44,159 p=24104 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:47:44,160 p=24104 u=tholeb n=ansible | 169.254.210.241            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:47:44,160 p=24104 u=tholeb n=ansible | 169.254.45.230             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:47:44,160 p=24104 u=tholeb n=ansible | 169.254.96.228             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:48:00,715 p=24210 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:48:03,657 p=24210 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:48:03,658 p=24210 u=tholeb n=ansible | fatal: [169.254.210.241]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.210.241 port 22: No route to host", "unreachable": true}
+2024-02-09 16:48:03,659 p=24210 u=tholeb n=ansible | fatal: [169.254.45.230]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.45.230 port 22: No route to host", "unreachable": true}
+2024-02-09 16:48:03,660 p=24210 u=tholeb n=ansible | fatal: [169.254.96.228]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.96.228 port 22: No route to host", "unreachable": true}
+2024-02-09 16:48:03,662 p=24210 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:48:03,663 p=24210 u=tholeb n=ansible | 169.254.210.241            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:48:03,664 p=24210 u=tholeb n=ansible | 169.254.45.230             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:48:03,664 p=24210 u=tholeb n=ansible | 169.254.96.228             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:49:02,546 p=24602 u=tholeb n=ansible | PLAY [Déploiement adhoc batman 🦇] *************************************************************************************************************************************
+2024-02-09 16:49:05,661 p=24602 u=tholeb n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************
+2024-02-09 16:49:05,662 p=24602 u=tholeb n=ansible | fatal: [169.254.96.228]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.96.228 port 22: No route to host", "unreachable": true}
+2024-02-09 16:49:05,663 p=24602 u=tholeb n=ansible | fatal: [169.254.45.230]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.45.230 port 22: No route to host", "unreachable": true}
+2024-02-09 16:49:05,663 p=24602 u=tholeb n=ansible | fatal: [169.254.210.241]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 169.254.210.241 port 22: No route to host", "unreachable": true}
+2024-02-09 16:49:05,665 p=24602 u=tholeb n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2024-02-09 16:49:05,665 p=24602 u=tholeb n=ansible | 169.254.210.241            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:49:05,665 p=24602 u=tholeb n=ansible | 169.254.45.230             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-02-09 16:49:05,665 p=24602 u=tholeb n=ansible | 169.254.96.228             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
