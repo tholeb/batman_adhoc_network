@@ -1,0 +1,57 @@
+---
+- name: Empeche le DHCP de gérer l'interface wlan0
+  ansible.builtin.lineinfile:
+      path: /etc/dhcpcd.conf
+      line: "denyinterfaces wlan0"
+      state: present
+      create: true
+      mode: "0644"
+
+- name: Batman au boot
+  ansible.builtin.lineinfile:
+      path: /etc/modules
+      line: "batman-adv"
+      state: present
+      create: true
+      mode: "0644"
+
+- name: Upload les fichiers de configuration de batman
+  ansible.builtin.copy:
+      src: "{{ item }}"
+      dest: "/etc/network/interfaces.d/{{ item }}"
+      mode: "0644"
+  loop:
+      - bat0
+      - wlan0
+
+- name: Upload le fichier de l'interface eth0
+  ansible.builtin.template:
+      src: eth0.j2
+      dest: /etc/network/interfaces.d/eth0
+      mode: "0644"
+
+- name: NetworkManager gère ifupdown
+  ansible.builtin.replace:
+      path: /etc/NetworkManager/NetworkManager.conf
+      regexp: "managed=true"
+      replace: "managed=false"
+
+- name: Désactive NetworkManager
+  ansible.builtin.systemd:
+      name: NetworkManager
+      state: stopped
+      enabled: false
+
+- name: Upload le script de démarrage
+  ansible.builtin.copy:
+      src: batman-startup.sh
+      dest: /root/batman-startup.sh
+      mode: "0755"
+
+- name: Démarre batman au boot
+  ansible.builtin.cron:
+      name: "batman"
+      job: "/root/batman-startup.sh > /dev/null"
+      user: root
+      special_time: reboot
+      state: present

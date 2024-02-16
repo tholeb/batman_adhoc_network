@@ -1,84 +1,21 @@
 ---
 - name: Upload le .deb de batctl
   ansible.builtin.copy:
-      src: batctl_2020.4-2_arm64.deb
-      dest: /tmp/batctl_2020.4-2_arm64.deb
+      src: "{{ item }}"
+      dest: /tmp/{{ item }}
       mode: "0644"
+  loop:
+      - batctl_2020.4-2_arm64.deb
+      - vim-common_8.2.2434-3+deb11u1_all.deb
+      - vim-runtime_8.2.2434-3+deb11u1_all.deb
+      - vim_8.2.2434-3+deb11u1_arm64.deb
 
 - name: Installer batctl et modules nécessaires
   ansible.builtin.apt:
-      deb: /tmp/batctl_2020.4-2_arm64.deb
+      deb: /tmp/{{ item }}
       state: present
-
-- name: Charge le module batman-adv
-  community.general.modprobe:
-      name: batman-adv
-
-- name: Empeche le DHCP de gérer l'interface wlan0
-  ansible.builtin.lineinfile:
-      path: /etc/dhcpd.conf
-      line: "denyinterfaces wlan0"
-      state: present
-      create: true
-      mode: "0644"
-
-- name: Upload les fichiers de configuration de batman
-  ansible.builtin.copy:
-      src: "{{ item }}"
-      dest: "/etc/network/interfaces.d/{{ item }}"
-      mode: "0644"
   loop:
-      - bat0
-      - wlan0
-
-- name: NetworkManager gère ifupdown
-  ansible.builtin.replace:
-      path: /etc/NetworkManager/NetworkManager.conf
-      regexp: "managed=false"
-      replace: "managed=true"
-
-- name: Active NetworkManager
-  ansible.builtin.systemd:
-      name: NetworkManager
-      state: restarted
-      enabled: true
-
-- name: Désactive l'interface wlan0
-  community.general.nmcli:
-      conn_name: wlan0
-      state: absent
-
-- name: Configurer l'interface wlan0 en mode ad-hoc
-  community.general.nmcli:
-      conn_name: wlan0
-      type: wifi
-      ip4: "192.168.2.{{ number }}/24"
-      ifname: wlan0
-      wifi:
-          mode: adhoc
-          channel: 8
-          band: a
-      state: present
-      ssid: "batman"
-
-- name: Ajoute l'interface wlan0 à batman-adv
-  ansible.builtin.command: batctl if add wlan0
-  changed_when: true
-
-- name: Active l'interface bat0
-  community.general.nmcli:
-      conn_name: bat0
-      state: present
-      ip4: "192.168.3.{{ number }}/24"
-      ifname: bat0
-      type: wifi
-      ssid: "batman"
-
-- name: Démarre batman au boot
-  ansible.builtin.cron:
-      name: "batman"
-      job: "batctl if add wlan0; ifconfig wlan0 up; ifconfig bat0 up"
-      user: root
-      special_time: reboot
-      state: present
-      cron_file: "batman"
+      - batctl_2020.4-2_arm64.deb
+      - vim-common_8.2.2434-3+deb11u1_all.deb
+      - vim-runtime_8.2.2434-3+deb11u1_all.deb
+      - vim_8.2.2434-3+deb11u1_arm64.deb

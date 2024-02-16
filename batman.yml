@@ -9,9 +9,13 @@
       - role: setup
         tags: setup
         become: true
+      - role: batman
+        tags: batman
+        become: true
 
   post_tasks:
       - name: Restart the pi
         ansible.builtin.reboot:
             reboot_timeout: 3600
             msg: "🦇 Reboot de la Raspberry Pi 🍓"
+        tags: reboot
