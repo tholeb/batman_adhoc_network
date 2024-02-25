@@ -1,0 +1,4 @@
+auto bat0
+iface bat0 inet static
+	pre-up /usr/sbin/batctl if add wlan0
+	address 192.168.60.{{ number }}/24

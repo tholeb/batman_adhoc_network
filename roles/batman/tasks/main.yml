@@ -1,11 +1,18 @@
 ---
+- name: Ajoute batman-adv au kernel
+  community.general.modprobe:
+      name: batman-adv
+      state: present
+
 - name: Empeche le DHCP de gérer l'interface wlan0
   ansible.builtin.lineinfile:
       path: /etc/dhcpcd.conf
-      line: "denyinterfaces wlan0"
+      line: "{{ item }}"
       state: present
       create: true
       mode: "0644"
+  loop:
+      - denyinterfaces wlan0
 
 - name: Batman au boot
   ansible.builtin.lineinfile:
@@ -15,22 +22,17 @@
       create: true
       mode: "0644"
 
-- name: Upload les fichiers de configuration de batman
-  ansible.builtin.copy:
-      src: "{{ item }}"
+- name: Upload les fichiers network
+  ansible.builtin.template:
+      src: "{{ item }}.j2"
       dest: "/etc/network/interfaces.d/{{ item }}"
       mode: "0644"
   loop:
+      - eth0
       - bat0
       - wlan0
 
-- name: Upload le fichier de l'interface eth0
-  ansible.builtin.template:
-      src: eth0.j2
-      dest: /etc/network/interfaces.d/eth0
-      mode: "0644"
-
-- name: NetworkManager gère ifupdown
+- name: NetworkManager gère pas ifupdown
   ansible.builtin.replace:
       path: /etc/NetworkManager/NetworkManager.conf
       regexp: "managed=true"
