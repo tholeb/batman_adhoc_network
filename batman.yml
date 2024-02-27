@@ -1,6 +1,6 @@
 ---
 - name: Déploiement adhoc batman 🦇
-  hosts: all
+  hosts: "{{ target | default('all') }}"
   become: true
   become_user: root
   remote_user: "pi"
@@ -12,10 +12,15 @@
       - role: batman
         tags: batman
         become: true
+      - role: ipforwarding
+        tags: ipforwarding, never
+        become: true
 
   post_tasks:
       - name: Restart the pi
         ansible.builtin.reboot:
             reboot_timeout: 3600
             msg: "🦇 Reboot de la Raspberry Pi 🍓"
-        tags: reboot
+        tags:
+            - reboot
+            - never

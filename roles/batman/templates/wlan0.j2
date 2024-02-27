@@ -2,8 +2,8 @@ auto wlan0
 iface wlan0 inet static
 	mtu 1532
 	wireless-channel 1
-	wireless-essid bat-network
+	wireless-essid batwifi
 	wireless-mode ad-hoc
 	wireless-ap 02:12:34:56:78:9A
 	post-up iw dev wlan0 set power_save off
-	wireless-power off
+	address 192.168.70.{{ number }}/24

@@ -9,6 +9,8 @@
       - vim-common_8.2.2434-3+deb11u1_all.deb
       - vim-runtime_8.2.2434-3+deb11u1_all.deb
       - vim_8.2.2434-3+deb11u1_arm64.deb
+      - traceroute_2.1.0-2+deb11u1_arm64.deb
+      - iptables_1.8.7-1_arm64.deb
 
 - name: Installer batctl et modules nécessaires
   ansible.builtin.apt:
@@ -20,4 +22,18 @@
       - vim-common_8.2.2434-3+deb11u1_all.deb
       - vim-runtime_8.2.2434-3+deb11u1_all.deb
       - vim_8.2.2434-3+deb11u1_arm64.deb
+      - traceroute_2.1.0-2+deb11u1_arm64.deb
+      - iptables_1.8.7-1_arm64.deb
   ignore_errors: true
+
+- name: NetworkManager gère pas ifupdown
+  ansible.builtin.replace:
+      path: /etc/NetworkManager/NetworkManager.conf
+      regexp: "managed=true"
+      replace: "managed=false"
+
+- name: Désactive NetworkManager
+  ansible.builtin.systemd:
+      name: NetworkManager
+      state: stopped
+      enabled: false
