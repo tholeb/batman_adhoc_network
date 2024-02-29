@@ -16,7 +16,6 @@
   ansible.builtin.apt:
       deb: /tmp/{{ item }}
       state: present
-      force: true
   loop:
       - batctl_2020.4-2_arm64.deb
       - vim-common_8.2.2434-3+deb11u1_all.deb

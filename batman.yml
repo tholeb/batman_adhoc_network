@@ -12,9 +12,6 @@
       - role: batman
         tags: batman
         become: true
-      - role: ipforwarding
-        tags: ipforwarding, never
-        become: true
 
   post_tasks:
       - name: Restart the pi

@@ -29,14 +29,15 @@
       mode: "0644"
   loop:
       - eth0
-      - bat0
       - wlan0
+      - bat0
 
 - name: Upload le script de démarrage
   ansible.builtin.copy:
       src: batman-startup.sh
       dest: /root/batman-startup.sh
       mode: "0755"
+  when: "master is not defined or master == 'false'"
 
 - name: Démarre batman au boot
   ansible.builtin.cron:
@@ -45,3 +46,16 @@
       user: root
       special_time: reboot
       state: present
+  when: "master is not defined or master == 'false'"
+
+- name: Upload le fichier network batman
+  ansible.builtin.template:
+      src: "bat0-routeur.j2"
+      dest: "/etc/network/interfaces.d/bat0"
+      mode: "0644"
+  when: "master is defined and master == 'true'"
+
+- name: Make a it server
+  ansible.builtin.import_tasks:
+      file: server.yml
+  when: "master is defined and master == 'true'"

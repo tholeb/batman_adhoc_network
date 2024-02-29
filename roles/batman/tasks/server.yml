@@ -7,7 +7,7 @@
       sysctl_set: true
       reload: true
 
-- name: Upload le script de démarrage
+- name: Upload le script serveur
   ansible.builtin.copy:
       src: batman-routeur.sh
       dest: /root/batman-routeur.sh
